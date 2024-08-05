@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import HeroSection from '../components/HeroSection.astro'
+import ChangeSection from '../components/ChargeSection.astro'
+---
+
+<Layout title="Welcome to Astro.">
+	<Header />
+	<main class="relative w-full h-screen overflow-auto snap-y snap-mandatory ">
+		
+		<div class="snap-center">
+			<HeroSection />
+		</div>
+		<div class="snap-center">
+			<ChangeSection/>
+		</div>
+		<div class="snap-center">
+			<HeroSection />
+		</div>
+
+	</main>
+
+	<style>
+		*{
+			
+		  	-ms-overflow-style: none;  
+			  scrollbar-width: none;
+		}
+	</style>
+</Layout>
+
